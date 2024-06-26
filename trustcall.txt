@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        
+        // Kiểm tra nếu thiết bị là iOS
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            window.location.href = "https://apps.apple.com/vn/app/trustcall/id6470878918";
+        } 
+        // Kiểm tra nếu thiết bị là Android
+        else if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.vn.trustcall";
+        } 
+        // Nếu không nhận diện được, có thể chuyển hướng đến trang web chính của ứng dụng
+        else {
+            window.location.href = "https://www.trustcall.vn/";
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
